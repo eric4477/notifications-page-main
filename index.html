@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Notifications page</title>
+  </head>
+  <body class="bg-verylightGrayishBlue">
+    <div
+      class="container flex flex-col p-3 rounded-xl w-12/12 bg-white md:my-10 md:w-6/12 sm:mt-0 md:mt-14 mx-auto"
+    >
+      <nav class="flex flex-row justify-between md:p-5">
+        <div class="Notifications flex flex-row items-center gap-2">
+          <div class="title text-lg md:text-2xl font-bold">
+            <h2>Notifications</h2>
+          </div>
+          <div
+            class="number rounded-md bg-Blue text-White text-center w-[27px] h-[24px]"
+          >
+            <p>3</p>
+          </div>
+        </div>
+        <div
+          class="mark-read flex items-center text-sm md:text-base text-darkGrayishBlue font-medium"
+        >
+          <h3 id="mark-all" class="hover:text-Blue">Mark all as read</h3>
+        </div>
+      </nav>
+      <div
+        id="notifications"
+        class="mt-5 flex flex-col w-full space-y-4 md:w-[95%] mx-auto"
+      >
+        <div
+          id="notification1"
+          class="flex flex-row gap-3 md:gap-4 bg-verylightGrayishBlue p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification1-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-mark-webber.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification1-text" class="flex flex-col">
+            <div
+              id="text1"
+              class="flex flex-row items-center relative flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+                >Mark Webber</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+                >reacted to your recent post</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-semibold text- mx-[2px] md:text-[16px] cursor-pointer hover:text-Blue"
+                >My first tournament today!</span
+              >
+              <span class="mx-[4px]">
+                <div
+                  class="notifications-icon w-[7.2px] h-[7.2px] shrink-0 md:w-[11.2px] md:h-[11.2px] bg-Red rounded-xl"
+                ></div>
+              </span>
+            </div>
+            <div
+              id="notification1-time"
+              class="text-grayishBlue text-xs font-light md:text-sm"
+            >
+              <p>1m ago</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification2"
+          class="flex flex-row gap-3 md:gap-4 bg-verylightGrayishBlue p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification2-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-angela-gray.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification2-text" class="flex flex-col">
+            <div
+              id="text2"
+              class="flex flex-row items-center flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px] cursor-pointer hover:text-Blue"
+                id="name"
+                >Angela Gray</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+                >followed you</span
+              >
+              <span class="mx-[4px]">
+                <div
+                  class="notifications-icon w-[7.3px] h-[7.3px] shrink-0 md:w-[11.2px] md:h-[11.2px] bg-Red rounded-xl"
+                ></div>
+              </span>
+            </div>
+            <div
+              id="notification2-time"
+              class="text-grayishBlue text-xs font-light md:text-sm"
+            >
+              <p>5m ago</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification3"
+          class="flex flex-row gap-3 md:gap-4 bg-verylightGrayishBlue p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification3-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification3-text" class="flex flex-col">
+            <div
+              id="text3"
+              class="flex flex-row items-center flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+              >
+                Jacob Thompson</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+                >has joined your group</span
+              >
+              <span
+                class="text-[12px] text-Blue font-semibold text- mx-[2px] md:text-[16px] cursor-pointer"
+              >
+                Chess Club</span
+              >
+              <span class="mx-[4px]">
+                <div
+                  class="notifications-icon w-[7.3px] h-[7.3px] shrink-0 md:w-[11.2px] md:h-[11.2px] bg-Red rounded-xl"
+                ></div>
+              </span>
+            </div>
+            <div
+              id="notification3-time"
+              class="text-grayishBlue text-xs font-light md:text-sm"
+            >
+              <p>1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification4"
+          class="flex flex-row gap-3 md:gap-4 p-2 md:p-5 w-full"
+        >
+          <div id="notification4-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification4-text" class="flex flex-col">
+            <div
+              id="text4"
+              class="flex flex-row items-center flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+              >
+                Rizky Hasanuddin</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+                >sent you a private message</span
+              >
+            </div>
+            <div
+              id="notification4-time"
+              class="text-grayishBlue text-xs font-light md:text-sm"
+            >
+              <p>5 day ago</p>
+            </div>
+            <div
+              class="text-[12px] bg-White border-[1px] border-slate-200 p-3 text-darkGrayishBlue font-light mx-[2px] md:text-[16px] my-2 hover:bg-lightGrayishBlue1 cursor-pointer"
+              id="message4-text"
+            >
+              <p class="w-10/12 md:w-[90%]">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification5"
+          class="flex flex-row relative gap-3 md:gap-4 p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification5-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification5-text" class="flex flex-col">
+            <div
+              id="text5"
+              class="flex flex-row items-center flex-wrap text-left leading-[3px] md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+              >
+                Kimberly Smith
+              </span>
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+              >
+                commented
+              </span>
+              <div class="w-[30px] md:hidden mx-4 cursor-pointer">
+                <img src="assets/images/image-chess.webp" />
+              </div>
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] my-0 md:text-[16px]"
+                >on your picture
+              </span>
+
+              <div
+                class="hidden w-[30px] md:block absolute right-5 top-5 md:w-[45px] cursor-pointer"
+                id="text-5-image"
+              >
+                <img src="assets/images/image-chess.webp" alt="" />
+              </div>
+            </div>
+            <div
+              id="notification5-time"
+              class="text-grayishBlue my-2 md:my-0 text-xs font-light md:text-sm"
+            >
+              <p>1 week ago</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification6"
+          class="flex flex-row gap-3 md:gap-4 p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification6-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification6-text" class="flex flex-col">
+            <div
+              id="text6"
+              class="flex flex-row items-center relative flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+                >Nathan Peterson</span
+              >
+              <div class="leading-[15px] md:leading-[20px]">
+                <span
+                  class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+                >
+                  reacted to your recent post</span
+                >
+                <span
+                  class="text-[12px] text-darkGrayishBlue font-semibold md:text-[16px] cursor-pointer hover:text-Blue"
+                  >5 end-game strategies to increase your win rate
+                </span>
+              </div>
+            </div>
+            <div
+              id="notification6-time"
+              class="text-grayishBlue text-xs font-light md:text-sm mt-1px md:mt-[3px]"
+            >
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="notification7"
+          class="flex flex-row gap-3 md:gap-4 p-2 md:p-5 rounded-lg w-full"
+        >
+          <div id="notification7-img" class="w-[35px] shrink-0 md:w-[45px]">
+            <img
+              class="w-full"
+              src="./assets/images/avatar-anna-kim.webp"
+              alt=""
+            />
+          </div>
+          <div id="notification7-text" class="flex flex-col">
+            <div
+              id="text7"
+              class="flex flex-row items-center flex-wrap text-left leading-tight md:leading-normal"
+            >
+              <span
+                class="text-[12px] text-veryDarkBlue font-bold mx-[2px] md:text-[16px]"
+                id="name"
+              >
+                Anna Kim</span
+              >
+              <span
+                class="text-[12px] text-darkGrayishBlue font-light mx-[2px] md:text-[16px]"
+              >
+                left the group</span
+              >
+              <span
+                class="text-[12px] text-Blue font-semibold text- mx-[2px] md:text-[16px] cursor-pointer"
+              >
+                Chess Club</span
+              >
+            </div>
+            <div
+              id="notification7-time"
+              class="text-grayishBlue text-xs font-light md:text-sm"
+            >
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/app.js"></script>
+  </body>
+</html>
